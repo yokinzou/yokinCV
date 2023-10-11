@@ -4,20 +4,20 @@ import LabelWithGraphic from "@/components/label-with-graphic";
 
 const education: EducationProps[] = [
   {
-    title: "M.S. Computer Science",
-    gpa: "GPA: 3.8/4.0, Science Scholar",
+    title: "M.S. Business Analytics",
+   gpa: "Merit, Science Scholar",
     org: {
-      name: "University of British Columbia",
-      logo: "/images/logos/ubc.svg",
+      name: "University of Liverpool",
+      logo: "/images/logos/liverpool.jpg",
     },
-    time: "Sep 2022 - Pres.",
+    time: "Sep 2020 - Mar 2022.",
   },
   {
-    title: "BSc Mathematics",
-    gpa: "Dean's Scholarship",
+    title: "BSc Accounting",
+    gpa: "81.3/100",
     org: {
-      name: "University of Nottingham",
-      logo: "/images/logos/unnc.jpg",
+      name: "Guangxi University of Finance and Economics",
+      logo: "/images/logos/GXUFE.jpg",
     },
     time: "Jul 2019",
   },

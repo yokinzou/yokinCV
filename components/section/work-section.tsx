@@ -5,12 +5,12 @@ import { Icons } from "@/components/icons";
 
 const exp: ExperienceProps[] = [
   {
-    head1: "Software Engineer",
-    head2: <LabelWithGraphic icon={Icons.Stack} content="JavaScript, AWS" />,
+    head1: "Data Analytics Engineer",
+  ///  head2: <LabelWithGraphic icon={Icons.Stack} content="JavaScript, AWS" />,
     head3: (
       <LabelWithGraphic
-        image="/images/logos/starbucks.svg"
-        content="Starbucks, San Francisco"
+        image="/images/logos/moomoo.jpg"
+        content="Moomoo, Shenzhen (HongKong Company)"
       />
     ),
     head4: "Sep 2023 - Pres.",
@@ -22,12 +22,12 @@ const exp: ExperienceProps[] = [
     ],
   },
   {
-    head1: "Risk Analyst",
-    head2: <LabelWithGraphic icon={Icons.Stack} content="Financial Modeling" />,
+    head1: "Data Engineer",
+    //head2: <LabelWithGraphic icon={Icons.Stack} content="Financial Modeling" />,
     head3: (
       <LabelWithGraphic
-        image="/images/logos/bitcoin.png"
-        content="Investment Bank, New York"
+        image="/images/logos/idemia.jpg"
+        content="IDEMIA, Shenzhen (French Company)"
       />
     ),
     head4: "Jul 2020 - Sep 2022",
@@ -38,12 +38,12 @@ const exp: ExperienceProps[] = [
     ],
   },
   {
-    head1: "KOL",
-    head2: <LabelWithGraphic icon={Icons.Stack} content="Content Creation" />,
+    head1: "Data Scientist Intern",
+   // head2: <LabelWithGraphic icon={Icons.Stack} content="Content Creation" />,
     head3: (
       <LabelWithGraphic
-        image="/images/logos/tiktok.png"
-        content="Tiktok, London"
+        image="/images/logos/didi.jpg"
+        content="Didi Global, Beijing"
       />
     ),
     head4: "Jun 2019 - Jul 2020",
@@ -52,6 +52,7 @@ const exp: ExperienceProps[] = [
       "Anim laborum elit eiusmod ullamco deserunt aliqua id est.",
     ],
   },
+
 ];
 
 export default function WorkSection() {
