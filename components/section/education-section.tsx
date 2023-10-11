@@ -32,7 +32,8 @@ function Education({ title, gpa, org, time }: EducationProps) {
             <span className="font-bold text-black dark:text-white">
               {title}
             </span>
-            <LabelWithGraphic icon={Icons.FileBadge} content={gpa} />
+            < LabelWithGraphic image={org.logo} content={org.name} />
+{/*             <LabelWithGraphic icon={Icons.FileBadge} content={gpa} /> */}
           </div>
           <span>{time}</span>
         </div>
