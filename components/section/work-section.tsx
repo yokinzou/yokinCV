@@ -13,12 +13,11 @@ const exp: ExperienceProps[] = [
         content="Moomoo, Shenzhen (HongKong Company)"
       />
     ),
-    head4: "Sep 2023 - Pres.",
+    head4: "Sep 2023 - Pres",
     bulletPoints: [
-      "Aliquip exercitation ut sunt ullamco magna cillum eiusmod proident sunt pariatur minim mollit labore.",
-      "Do laborum deserunt officia sit fugiat laborum est esse tempor commodo nisi magna sint.",
-      "Qui enim pariatur ea ullamco laborum do ipsum sit laboris voluptate deserunt ut irure do.",
-      "Amet culpa nostrud cillum ut pariatur enim velit.",
+      "Build the Power BI reports to monitor the business KPI.",
+      "Build the machine learning pipeline to improve the new low quality user deposit ",
+      "Maintenance the warehouse by building the frequently used tables and views with hivesql"
     ],
   },
   {
@@ -30,11 +29,15 @@ const exp: ExperienceProps[] = [
         content="IDEMIA, Shenzhen (French Company)"
       />
     ),
-    head4: "Jul 2020 - Sep 2022",
+    head4: "Feb 2022 - Sep 2023",
     bulletPoints: [
-      "Sint fugiat eu magna irure eu incididunt est sint occaecat fugiat tempor.",
-      "Ipsum culpa fugiat consectetur nulla enim consequat ea tempor fugiat. Reprehenderit ullamco cillum consectetur dolore tempor voluptate consectetur.",
-      "Nostrud quis reprehenderit non officia ullamco magna. Magna Lorem minim nisi occaecat adipisicing.",
+      "Be responsible for building Shenzhen factory Power BI reports cooperating with cross-functional departments",
+      "Build the ETL pipelines (Python,SSIS,Azure data factory,dbt,Kettle) to extract manufacturing BOM data to automate and optimize the business process",
+      "Build the machine learning model to predict the actual BOM quantity to reduce  production overs",
+      "Maintain data warehouse performance including tables and views redesign and query performance optimization",
+      "Develop the automation algorithms(Python code) and applications (Power APP) to optimize company business process",
+      "Provide data science training to company colleagues to discover valuable digital projects",
+      
     ],
   },
   {
@@ -43,13 +46,14 @@ const exp: ExperienceProps[] = [
     head3: (
       <LabelWithGraphic
         image="/images/logos/didi.jpg"
-        content="Didi Global, Beijing"
+        content="DiDi Global, Beijing"
       />
     ),
-    head4: "Jun 2019 - Jul 2020",
+    head4: "Aug 2021 - Nov 2021",
     bulletPoints: [
-      "Voluptate occaecat reprehenderit aliqua mollit do amet eiusmod minim velit et non deserunt ex.",
-      "Anim laborum elit eiusmod ullamco deserunt aliqua id est.",
+      "Lead the business data monitor to write the weekly analytics report for the business unit(Poupa car) of latin america ",
+      "Conduct AB Testing experiment to check the carpooling willingness among users to support the business decision",
+      "Build the Tableau dashboards to automate the data generation to help colleagues to get the data efficiently",
     ],
   },
 
@@ -57,7 +61,7 @@ const exp: ExperienceProps[] = [
 
 export default function WorkSection() {
   return (
-    <Section title="WORK EXPERIENCE">
+    <Section title="WORK EXPERIENCE (2 years +)">
       <div className="flex flex-col gap-y-1">
         {exp.map((e, index) => (
           <Experience key={index} {...e} />
