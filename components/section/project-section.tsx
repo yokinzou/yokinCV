@@ -27,76 +27,97 @@ async function getStarNumber(owner: string, repo: string) {
 }
 
 function ProjectTitle({ image, title, link }: ProjectTitleProps) {
-  // return (
-  //   // <Link
-  //   //   href={link}
-  //   //   target="_blank"
-  //   //   className="flex items-center gap-x-1 group"
-  //   // >
-  //   //   <LabelWithGraphic image={image} content={title} />
-  //   //   <Icons.Link
-  //   //     size={12}
-  //   //     className="text-zinc-400 transition group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-200 group-hover:animate-shake"
-  //   //   />
-  //   // </Link>
-  // );
+  return null;
+  // <Link
+  //   href={link}
+  //   target="_blank"
+  //   className="flex items-center gap-x-1 group"
+  // >
+  //   <LabelWithGraphic image={image} content={title} />
+  //   <Icons.Link
+  //     size={12}
+  //     className="text-zinc-400 transition group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-200 group-hover:animate-shake"
+  //   />
+  // </Link>
 }
 
 export default async function ProjectSection() {
   const exp: ExperienceProps[] = [
+    {
+      // head1: (
+      //   <ProjectTitle
+      //     image="/images/logos/nextjs.png"
+      //     title="nk data extraction and Process automation"
+      //     link="https://nextjs.org/"
+      //   />
+      // ),
+      head1:
+        // <LabelWithGraphic
+        //   icon={Icons.Stack}
+        "Ink Data Extraction and Process Automation (Deployed in the Company Level)",
+      // />
+      // head3: (
+      //   <LabelWithGraphic
+      //     icon={Icons.Star}
+      //     content={`# Github Stars: ${await getStarNumber(
+      //       "vercel",
+      //       "next.js"
+      //     )}`}
+      //   />
+      // ),
+      // head4: "Sep 2022 - Oct 2022",
+      bulletPoints: [
+        "Extract the BOM data of ink in excel files using python to save the data in json file then to import the json data to database and deploy the script in remote server to run in daily bases",
+        "Build a Power BI report to use the extracted data to automate the ink consumption calculation with the parameter input from sharepoint to save the ink operator 90% of the daily working time",
+      ],
+    },
+    {
+      head1:
+        "Physical Access Application Development in Power APP (Deployed in the Company Level)",
+      // (
+      //   <ProjectTitle
+      //     image="/images/logos/tailwind.webp"
+      //     title="Tailwind CSS"
+      //     link="https://tailwindcss.com/"
+      //   />
+      // ),
+
+      // head2: <LabelWithGraphic icon={Icons.Stack} content="HTML, CSS" />,
+      // head3: <LabelWithGraphic icon={Icons.Star} content={`# Users: 412343`} />,
+      // head4: "May 2023 - July 2023",
+      bulletPoints: [
+        "Collaborate with the business owner to define the app workflow",
+        "Develop the physical application app to realize the different managers to approve their own physical access and save the data in sharepoint automatically to save 1 hour per time and papers",
+      ],
+    },
     // {
-    //   head1: (
-    //     <ProjectTitle
-    //       image="/images/logos/nextjs.png"
-    //       title="Next.js"
-    //       link="https://nextjs.org/"
-    //     />
-    //   ),
-    //   head2: (
-    //     <LabelWithGraphic icon={Icons.Stack} content="TypeScript, React, SSG" />
-    //   ),
-    //   head3: (
-    //     <LabelWithGraphic
-    //       icon={Icons.Star}
-    //       content={`# Github Stars: ${await getStarNumber(
-    //         "vercel",
-    //         "next.js"
-    //       )}`}
-    //     />
-    //   ),
-    //   head4: "Sep 2023 - Pres.",
+    //   head1:
+    //     "Printing Overs Data Science Project (Deployed in the company level)",
+    //   // (
+    //   //   <ProjectTitle
+    //   //     image="/images/logos/tailwind.webp"
+    //   //     title="Tailwind CSS"
+    //   //     link="https://tailwindcss.com/"
+    //   //   />
+    //   // ),
+
+    //   // head2: <LabelWithGraphic icon={Icons.Stack} content="HTML, CSS" />,
+    //   // head3: <LabelWithGraphic icon={Icons.Star} content={`# Users: 412343`} />,
+    //   head4: "May 2023 - July 2023",
     //   bulletPoints: [
-    //     // "Id ex et adipisicing proident excepteur.",
-    //     // "Dolore ex commodo non et qui. Reprehenderit exercitation irure culpa sint nisi eiusmod amet ad occaecat quis.",
-    //     // "Veniam esse enim adipisicing incididunt tempor minim irure occaecat cupidatat duis consectetur dolor.",
-    //     // "Qui cupidatat adipisicing adipisicing aliqua irure id esse aute pariatur laborum non.",
-    //   ],
-    // },
-    // {
-    //   head1: (
-    //     <ProjectTitle
-    //       image="/images/logos/tailwind.webp"
-    //       title="Tailwind CSS"
-    //       link="https://tailwindcss.com/"
-    //     />
-    //   ),
-    //   head2: <LabelWithGraphic icon={Icons.Stack} content="HTML, CSS" />,
-    //   head3: <LabelWithGraphic icon={Icons.Star} content={`# Users: 412343`} />,
-    //   head4: "Sep 2023 - Pres.",
-    //   bulletPoints: [
-    //     // "Supported user to create their resume with React, and easily export it as pdf (like this resume)",
-    //     // "Enhanced resume with React, featuring responsive/interactive design, dark mode, showing real-time API data, and even integrating GPT etc.",
+    //     "Collaborate with the business owner to define the app workflow",
+    //     "Develop the physical application app to realize the different managers to approve their own physical access and save the data in sharepoint automatically to save the time(1 hour per time) and papers",
     //   ],
     // },
   ];
 
-  return ( null
-    // <Section title="PROJECT">
-    //   {/* <div className="flex flex-col gap-y-1">
-    //     {exp.map((e, index) => (
-    //       <Experience key={index} {...e} />
-    //     ))}
-    //   </div> */}
-    //  </Section>
+  return (
+    <Section title="PROJECT">
+      <div className="flex flex-col gap-y-1">
+        {exp.map((e, index) => (
+          <Experience key={index} {...e} />
+        ))}
+      </div>
+    </Section>
   );
 }
