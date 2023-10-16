@@ -2,27 +2,24 @@ import Section from "./section";
 import { Icons } from "@/components/icons";
 import LabelWithGraphic from "@/components/label-with-graphic";
 
-
 const education: EducationProps[] = [
   {
     title: "MSc. Business Analytics",
-    gpa: "Merit, Science Scholar",
+    gpa: "Merit",
     org: {
       name: "University of Liverpool",
       logo: "/images/logos/liverpool.jpg",
     },
     time: "Sep 2020 - Mar 2022",
-
   },
   {
-    title: "BA. Accounting",
-    gpa: "81.3/100",
+    title: "BA.Accounting",
+    gpa: "top10%",
     org: {
       name: "Guangxi University of Finance and Economics",
       logo: "/images/logos/GXUFE.jpg",
     },
     time: "Sep 2014 - Jun 2018",
-
   },
 ];
 
@@ -32,39 +29,39 @@ function Education({ title, gpa, org, time }: EducationProps) {
       <div className="hidden md:block">
         <div className="text-sm font-semibold flex flex-wrap justify-between text-zinc-700 dark:text-zinc-300">
           <div className="flex gap-x-4 flex-wrap">
-
-            < LabelWithGraphic image={org.logo} content={org.name} />
+            <LabelWithGraphic image={org.logo} content={org.name} />
             <span className="font-bold text-black dark:text-white">
               {title}
             </span>
-            {/* <span>{title}</span> */}
+            {/* <span>{gpa}</span> */}
           </div>
           <span>{time}</span>
 
-
-        {title==="MSc. Business Analytics" && (
-          <div className="md:flex text-sm">
-            <div className="w-32 flex-shrink-0 flex justify-between">
-              <span className="font-bold">Main Courses</span>:
+          {title === "MSc. Business Analytics" && (
+            <div className="md:flex text-sm">
+              <div className="w-32 flex-shrink-0 flex justify-between">
+                <span className="font-bold">Main Courses</span>:
+              </div>
+              <div className="font-normal">
+                Database and database managements, Data miming & machine
+                learning, Data structures and Algorithm, Computer Network, Big
+                data Application, Social network analysis, Econometrics
+              </div>
             </div>
-            <div className="font-normal">
-              Database and database managements, Data miming & machine learning, Data structures and Algorithm, Computer Network, Big data Application, Social network analysis, Econometrics
-            </div>
-          </div> )
-          } 
+          )}
 
-          {title==="BA. Accounting" && (
-          <div className="md:flex text-sm">
-            <div className="w-32 flex-shrink-0 flex justify-between">
-              <span className="font-bold">Main Courses</span>:
+          {/* {title === "BA. Accounting" && (
+            <div className="md:flex text-sm">
+              <div className="w-32 flex-shrink-0 flex justify-between">
+                <span className="font-bold">Main Courses</span>:
+              </div>
+              <div className="font-normal">
+                Linear Algebra, Calculus, Probability Theory, Statistics,
+                Advanced Financial Modeling, Finance, Economics, Advanced
+                Accounting, Flash Animation Design
+              </div>
             </div>
-            <div className="font-normal">
-            Linear Algebra, Calculus, Probability Theory, Statistics, Advanced Financial Modeling, Finance, Economics, Advanced Accounting, Flash Animation Design
-            </div>
-          </div> )
-          }  
-
-
+          )} */}
         </div>
         {/* {title} */}
       </div>
