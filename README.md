@@ -11,19 +11,6 @@ It has the following features:
 
 ## Overview
 
-[Live Deployment of this repo](https://react-resume-starter.vercel.app/) (With all features mentioned above but GPT integration)
-
-![Screenshot](public/images/read-me/demo.png)
-
-You can download PDF version of this resume by click the download button on the top right corner. Note the best way to print is to print it in Chrome/Arc Browser with A4 Size like the following.
-
-![Screenshot](public/images/read-me/pdf.png)
-
-In your download PDF file, the button in the top right corner will be "View Live Resume" button to let your reader to go to your website (live resume).
-
-[My Resume](https://kuiliang.vercel.app/resume) (With GPT integration)
-
-![Screenshot](public/images/read-me/gpt-showcase.png)
 
 ## Getting Started
 
@@ -40,15 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the sections in the resume by modifying files in `components/section` folder. And change the your photo in the navbar by change the file `/components/header.tsx` and `public/images/portrait.jpeg`.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
 VERY **EASY**! **NO CODE** NEEDED! AND **FREE**!
@@ -63,10 +41,4 @@ Then you can import your repo. (You need to fork this repo or create your own re
 
 Then you can deploy your app by clicking `Deploy` button.
 
-## Todo
 
-- [ ] More Friendly Document
-  - [ ] Understand the full structure of this project
-  - [ ] How to use API call
-  - [ ] How to integrate GPT
-- [x] PDF resume image loading="eager"
