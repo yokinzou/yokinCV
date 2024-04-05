@@ -5,6 +5,8 @@ import { Container } from "./container";
 import Link from "next/link";
 
 export function Header() {
+   return null
+  ;
   // return (
   //   // <Container className="mt-5 mb-10">
   //   //   <nav className="relative flex justify-between items-center">
