@@ -38,7 +38,8 @@ const exp: ExperienceProps[] = [
       "Developed over 30 ETL pipelines (Python,SSIS,Azure data factory,dbt,Kettle) to extract manufacturing BOM data to automate and optimize the business process",
       "Led the machine learning project to predict the actual BOM quantity needed to reduce  production overs (at least 1 million RMB per year)",
       "Improved data warehouse performance including tables and views redesign and query fine-tune",
-      "Led the automation algorithms(Python) to automate supply chain works (at least 4 working hours per day) and developed low code applications (Power APP) to optimize company business process"
+      "Led the automation algorithms(Python) to automate supply chain works (at least 4 working hours per day) and developed low code applications (Power APP) to optimize company business process",
+      "Provided training on the application of data science (machine learning) to company colleagues (with more than 50 participants) to enhance colleagues' mindset of digital benefits"
      
     ],
   },
