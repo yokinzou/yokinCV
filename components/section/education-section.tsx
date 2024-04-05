@@ -42,14 +42,14 @@ function Education({ title, gpa, org, time }: EducationProps) {
                 <span className="font-bold">Main Courses</span>:
               </div>
               <div className="font-normal">
-                Database and database managements, Data miming & machine
-                learning, Data structures and algorithm, Computer network, Big
-                data application, Social network analysis, Econometrics
+                Database and Database Managements, Data Miming & Machine
+                Learning, Data Structures and Algorithm, Computer Network, Big
+                Data Application, Social Network Analysis, Econometrics
               </div>
             </div>
           )}
 
-          {title === "BA. Accounting" && (
+          {title === "BA.Accounting" && (
             <div className="flex text-sm">
               <div className="w-32 flex-shrink-0 flex justify-between">
                 <span className="font-bold">Main Courses</span>:
